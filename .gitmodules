@@ -1,6 +1,3 @@
-[submodule "niket"]
-	path = niket
-	url = https://github.com/Niketagarwal653/Coursera-Project.git
 [submodule "test"]
 	path = test
 	url = https://github.com/Niketiiitd/github-final-project.git
