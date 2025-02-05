@@ -18,6 +18,65 @@
             </ul>
         </nav>
     </header>
-    
+    <form method="post">
+        <div>Name:
+            <input type="text" name="fullname" placeholder="Full Name" required>
+        </div>
+        <div>Email:
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div>Phone:
+            <input type="tel" name="phone" placeholder="Phone Number">
+        </div>
+        <div>Departure City:
+            <input type="text" name="departure" placeholder="Departure City" required>
+        </div>
+        <div>Destination:
+            <input type="text" name="destination" placeholder="Destination" required>
+        </div>
+        <div>Date:
+            <input type="date" name="date" required>
+        </div>
+        <fieldset>
+            <legend>Class Selection</legend>
+            <div>
+                <input type="radio" name="class" value="economy">Economy
+            </div>
+            <div>
+                <input type="radio" name="class" value="business">Business
+            </div>
+            <div>
+                <input type="radio" name="class" value="first">First Class
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Method</legend>
+            <div>
+                <input type="radio" name="payment" value="credit">Credit Card
+            </div>
+            <div>
+                <input type="radio" name="payment" value="debit">Debit Card
+            </div>
+            <div>
+                <input type="radio" name="payment" value="upi">UPI
+            </div>
+        </fieldset>
+
+        <div>
+            Terms & Conditions:<br>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+        </div>
+        
+        <div>
+            <input type="submit" value="Book Flight">
+        </div>
+    </form>
+    <br>
+    <footer>
+        <div>
+            © 2025 Airline Services
+        </div>
+    </footer>
 </body>
 </html>
