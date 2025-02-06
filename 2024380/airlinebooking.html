@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking</title>
+    
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div>
+                <h1>Airline Booking</h1>
+            </div>
+            <nav class="header">
+                <h1>Home</h1>
+                <h1>Flights</h1>
+                <h1>Booking</h1>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="booking">
+        <div class="form-container">
+            <h2>Book a Flight</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Johndoe@example.com">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 1234567890">
+
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required placeholder="Departure City">
+                
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required  placeholder="Destination City">
+                
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+                
+                <label for="return">Return Date:</label>
+                <input type="date" id="return" name="return">
+                
+
+                <label for = "payment">Payment Method:</label>
+                
+                <div class="radio">
+                    <input type="radio" id="credit" name="payment" value="credit" required style="width: 20px;">
+                    <label for="credit">Credit Card</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="debit" name="payment" value="debit" required style="width: 20px;">
+                    <label for="credit">Debit Card</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="online" name="payment" value="online1" required style="width: 20px;">
+                    <label for="credit">Paytm</label>
+                </div>
+                
+                <label for="Terms & Conditions">Terms & Conditions:</label> <br>
+                
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required style="width: 20px;">
+                    <p>I agree to the terms and conditions.</p>
+                </div>
+                
+
+
+                <input type="submit" value="Book Now">
+            </form>
+        
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Airline Services.</p>
+    </footer>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    header, footer {
+        background-color: #f8f8f8;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav.header h1 {
+        display: inline;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+     .form-container input, .form-container select { 
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .radio{
+        display: flex;
+        align-items: center;
+    }
+
+    .terms{
+        display: flex;
+        align-items: center;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+</html>
