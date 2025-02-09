@@ -1,1 +1,5 @@
-
+li{display: inline-block;
+    margin: 0 10px;
+    float: right;}
+h1{text-align: center;}
+footer{text-align: center;}
