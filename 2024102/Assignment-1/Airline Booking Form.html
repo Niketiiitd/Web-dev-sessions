@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+    <header>
+        <h1>Airline Booking</h1>
+    </header>
+    <nav>
+        <a href="#" style="margin-right: 10px;">Home</a>
+        <a href="#" style="margin-right: 10px;">Flights</a>
+        <a href="#">Contact</a>
+    </nav>
+    <form method="post" style="max-width: 600px; margin: 20px auto;">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required style="display: block; width: 100%; margin-bottom: 10px;">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required style="display: block; width: 100%; margin-bottom: 10px;">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" style="display: block; width: 100%; margin-bottom: 10px;">
+        <label for="departure">Departure City:</label>
+        <input type="text" id="departure" name="departure" placeholder="Departure City" required style="display: block; width: 100%; margin-bottom: 10px;">
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Destination" required style="display: block; width: 100%; margin-bottom: 10px;">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required style="display: block; width: 100%; margin-bottom: 10px;">
+
+        <label for="class">Class:</label>
+        <select id="class" name="class" style="display: block; width: 100%; margin-bottom: 10px;">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First Class</option>
+            <option value="second">Second Class</option>
+        </select>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="credit" name="payment" value="credit" required>
+        <label for="credit">Credit Card</label>
+        <input type="radio" id="debit" name="payment" value="debit" required>
+        <label for="debit">Debit Card</label>
+        <input type="radio" id="upi" name="payment" value="upi" required>
+        <label for="upi">UPI</label>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <input type="submit" value="Book Flight" style="display: block; width: 100%; margin-bottom: 10px;">
+    </form>
+    <footer>
+        <p style="text-align: center;">© 2025 Airline Services</p>
+    </footer>
+</body>
+</html>
+
