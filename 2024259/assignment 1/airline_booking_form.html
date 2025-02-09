@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Jataayu airlines-Book your next adventure</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body style="background-color: gold;">
+    <header>
+        <nav>
+            <ul>
+                <li><b>home</b></li>
+                <li><b>flights</b></li>
+                <li><b>contact</b></li>
+                <li><b>About us</b></li>
+            </ul>
+        </nav>
+        <br>
+        <h1 style="color: red;">Welcome! Book your next adventure with us now! </h1>
+    </header>
+    <article>
+        <form action="post">
+            <section> <!--for personal details-->
+                <h2><u>Personal Details</u></h2>
+                <div> <!--for the name-->
+                    <label for="1">Enter your full name</label>
+                    <input type="text" id="1" name="naam" placeholder="Enter here">
+                </div><br>
+                <div> <!--for email-->
+                    <label for="2">Enter your e-mail </label>
+                    <input type="text" id="2" name="mail" placeholder="Enter here">
+                </div>
+                <br>
+                <div> <!--for phone-->
+                    <label>Enter your phone no. </label>
+                    <input type="text" id="3" name="phone" placeholder="Enter here">
+                </div>
+
+            </section>
+            <section> <!--for flight details-->
+                <h2><u>Flight Details</u></h2>
+                <div> <!--for departure-->
+                    <label for="4">Enter your departure city</label>
+                    <input type="text" id="4" name="Departure city" placeholder="Enter here">
+                </div>
+                <br>
+                <div> <!--for destination-->
+                    <label for="5">Enter your destination</label>
+                    <input type="text" id="5" name="destination" placeholder="Enter here">
+                </div>
+                <br>
+                <div> <!--for date of departure-->
+                    <label for="6">Date of Departure</label>
+                    <input type="date" id="6" name="date of departure">
+                </div>
+            </section>
+            <section> <!--for payment details-->
+                <h2><u>Payment Details</u></h2>
+                <b>Select the mode of payment</b>
+                <br><br>
+                <div>
+                    <label for="7">Credit Card</label>
+                    <input type="radio" id="7" name="method">
+                    <label for="8">Debit Card</label>
+                    <input type="radio" id="8" name="method">
+                    <label for="9">UPI</label>
+                    <input type="radio" id="9" name="method">
+                </div>
+            </section>
+            <section> <!--terms/conditions and submit-->
+                <h2><u>Almost there!</u></h2>
+                <div> <!--for terms and conditions-->
+                    <label for="10">I have read and agree with the terms and conditions set forth by the
+                        airlines</label>
+                    <input type="checkbox" id="10" name="terms and conditions">
+                </div>
+                <br>
+                <div> <!--newseletter-->
+                    <label for="11">Would you like to subscribe to our newsletter?</label>
+                    <input type="checkbox" id="11" name="newsletter">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="12" name="final" value="Book Flight">
+                </div>
+
+            </section>
+
+        </form>
+    </article>
+    <footer>
+        &copy;2025 Jataayu Airline services Ltd.
+    </footer>
+</body>
+</html>
