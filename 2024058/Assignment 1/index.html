@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title> Airline Booking Form</title>
+    <header>
+    <h1> Airline Booking</h1>
+    <nav style="width:fit-content; height: auto;""> 
+        <a href="https://www.spicejet.com/"> Home </a>
+        <a href="https://www.spicejet.com/"> Flights</a>
+        <a href="emailto:johndoe@gmail.com"> Contact</a>
+        <a href="https://www.google.com">Help</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    </header>
+    <div id="Div">
+    <form method="post"> 
+        <div>
+        <label for="TexBox"> Enter the name of the person: </label>
+        <input type="text" id = "TextBox" class = "Form" placeholder="Enter here" required>
+    </div>
+    <br>
+    <div>
+        <label for="Email"> Enter your email: </label>
+        <input type="email" placeholder="Email" required> 
+    </div>
+    <br>
+    <div>
+        <label for="Telephone"> Phone Number: </label>
+        <input type="tel" name="Phone" placeholder="Phone Number">
+        
+    </div>
+    <br>
+    <div>
+        <label for="TextBox"> Departure City: </label>
+        <input type="text" name="departure" placeholder="Departure City" required>
+    </div> 
+    <br>
+    <div>
+        <label for="TextBox"> Enter the Destination: </label>
+        <input type="text" name="Destination" placeholder="Destination" required>
+    </div>
+    <br>
+    <div>
+        <label for="Date"> Date of departure: </label>
+        <input type="Date" name="Date" required> 
+    </div>
+    <br>
+    <div>
+        <p>Payment Methods</p>
+        <p>---------------------------------</p>
+        <div> 
+            <label for="Tick">Credit Card</label>
+            <input type="radio" name="Tick">
+        </div>
+        <div> 
+            <label for="Tick">UPI</label>
+            <input type="radio" name="Tick">
+        </div>
+
+        <div> 
+            <label for="Tick">Debit Card</label>
+            <input type="radio" name="Tick">
+        </div>
+        <div> 
+            <label for="Tick">Digital Banking</label>
+            <input type="radio" name="Tick">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div> 
+        <input type="checkbox" name = "Checkbox">
+        <label for="CheckBox"> Terms & Conditions (I agree to Terms and Conditions)</label>
+    </div>
+    <br> 
+    <br>
+    <div id = "Submit"> 
+        <label for=""> </label>
+        <input type="submit" id ="unique" placeholder="Enter">
+    </div>
+
+
+
+    </form>
+    </div>
+    </table>
+
+    <footer>
+        <p> &copy 2025 Airline Services</p>
+        </footer>
+    
+</body>
+</html>
+<style> 
+    body { 
+        background-color: aqua;
+        font-style: italic;
+    }
+    header h1 {
+        color: blue;
+        margin: 50px 200px;
+        text-underline-offset: 10px;
+        font-style: normal;
+        font-style: italic;
+        font-size: 50px;
+    }
+    nav a{
+        color: #000000;
+        margin: 50px;
+    }
+    form { 
+        padding: 50px;
+        border: 100px;
+    }
+    div { 
+        background-color: aquamarine;
+    }
+    #unique{ 
+        color: blue;
+        size: 100px;
+        width: 100px;
+    }
+    
+</style>
