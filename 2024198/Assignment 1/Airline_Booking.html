@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+</head>
+  
+<body style="background-color: rgb(254, 251, 248);">  
+      <h1 style="color: rgb(21, 65, 185);">Airline Booking Form</h1>
 
+    <nav>
+        <a href="">Home </a>| 
+        <a href=""> Flights</a>| 
+        <a href=""> Contact Us</a>
+    </nav>
+        <br><br>
+    <form method="post" action="">
+
+       <div>Name:
+        <input type="text" name="fullname" placeholder="Full Name" required>
+       </div>
+
+       <br>
+
+       <div>Email:
+        <input type="text" name="email" placeholder="Email" required>
+       </div>
+
+       <br>
+       <label for="phone">Phone Number:</label>
+       <input type="tel" name="" id="phone" placeholder="Phone Number" required> 
+       <br><br>
+
+       <label for="departure">Departure City:</label>
+       <input type="text" name="" id="departure" placeholder="Departure City" required> 
+       <br><br>
+
+      <div>Destination:
+        <input type="text" name="destination" placeholder="Destination" required></div>
+      <br>
+
+      <div>Date:
+        <input type="date" name="date" required>
+      </div>
+      <br>
+
+      <fieldset>
+        <legend>Choose Class:</legend>
+        <div>
+            <input type="radio" name="class" value="economy">
+            Economy
+        </div>
+        <div>
+          <input type="radio" name="class" value="economy">
+          Premium Economy
+      </div>
+        <div>
+            <input type="radio" name="class" value="business">
+            Business
+        </div>
+        <div>
+            <input type="radio" name="class" value="first">
+            First Class
+        </div>
+    </fieldset>
+<br>
+      <fieldset>
+        <legend>Payment Method:</legend>
+        <div>
+            <input type="radio" name="pay" value="credit">
+            Credit Card
+        </div>
+        <div>
+            <input type="radio" name="pay" value="debit">
+            Debit Card
+        </div>
+        <div>
+            <input type="radio" name="pay" value="upi">
+            UPI
+        </div>
+    </fieldset>
+<br>
+      <div>
+        <input size="x-small" type="checkbox" name="condition" required> 
+        <style>
+        p{font-weight: bold; display: inline; font-size: small;}
+        </style> 
+        <p>I agree to the terms and conditions</p>
+   </div>
+   <br>
+
+
+    <div>
+        <input type="submit" value="Book Flight">
+    </div>
+
+    </form>
+    <br>
+    <footer>
+
+      <style>
+
+      q{font-weight: bold;font-size: x-small ;}
+      </style> 
+       <q>© 2025 Airline Services</q>
+    </footer>
+    
+</body>
+</html>
