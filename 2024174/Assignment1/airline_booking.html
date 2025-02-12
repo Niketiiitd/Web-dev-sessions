@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Airline Booking</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Flights</a>
+        <a href="#">Contact</a>
+    </nav>
+    <br>
+
+    <form action="post">
+        <div>Full Name: <input type="text" name="fullname" placeholder="Full Name" required></div>
+        <div>Email: <input type="email" name="email" placeholder="Email" required></div>
+        <div>Phone: <input type="tel" name="phone" placeholder="Phone Number"></div>
+        <div>Departure City: <input type="text" name="departure" placeholder="Departure City" required></div>
+        <div>Destination: <input type="text" name="destination" placeholder="Destination" required></div>
+        <div>Date: <input type="date" name="date" required></div>
+
+        <br>
+
+        <fieldset>
+            <legend>Class Selection</legend>
+
+            <input type="radio" id="economy" name="class" value="economy" />
+            <label for="economy">economy</label><br />
+
+            <input type="radio" id="business" name="class" value="business" />
+            <label for="business">business</label><br />
+
+            <input type="radio" id="first" name="class" value="first" />
+            <label for="first">first</label>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Method</legend>
+
+            <input type="radio" id="credit" name="Payment" value="credit" />
+            <label for="economy">Economy</label><br />
+
+            <input type="radio" id="debit" name="Payment" value="debit" />
+            <label for="business">Debit</label><br />
+
+            <input type="radio" id="upi" name="Payment" value="upi" />
+            <label for="first">UPI</label>
+        </fieldset>
+
+        <div>
+            Terms and Conditions<br>
+            <input type="checkbox" name="agreement">
+            <label for="agreement">I agree to the Terms and Conditions</label>
+        </div>
+        <br>
+        <input type="submit" value="Book Flight">
+    </form>
+
+    <footer>
+        <p>© 2025 Airline Services</p>
+    </footer>
+
+</body>
+
+</html>
