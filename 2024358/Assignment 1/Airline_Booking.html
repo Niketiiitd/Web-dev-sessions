@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline Booking Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Airline Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Flights">Flights</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Airline Booking Form</h3>
+            <p>Enter All Your Details in the below form to book Flight</p>
+        </section>
+        <form method="post">
+            <ul>
+                <li>
+                    Name :
+                    <input type="text" name="fullname" placeholder="Full Name" required />
+                </li>
+                <br />
+                <li>
+                    Email :
+                    <input type="email" name="email" placeholder="Email" required />
+                </li>
+                <br />
+                <li>
+                    Phone : <input type="tel" name="phone" placeholder="Phone Number" />
+                </li>
+                <br />
+                <li>
+                    Departure City :
+                    <input type="text" name="departure" placeholder="Departure City" required />
+                </li>
+                <br />
+                <li>
+                    Destination :
+                    <input type="text" name="destination" placeholder="Destination" required />
+                </li>
+                <br />
+                <li>Date : <input type="date" name="date" required /></li>
+                <br />
+
+                <li>
+                    Booking Class :
+                    <select id="booking_class" name="Booking_Class" required>
+                        <option value="Economy Class">Economy Class</option>
+                        <option value="Business Class">Business Class</option>
+                        <option value="First Class">First Class</option>
+                    </select><br />
+                </li>
+                <br />
+                <li>
+                    Payment Methods<br/>
+                    <input type="radio" value="Credit Card" required/>Credit Card<br />
+                    <input type="radio" value="Debit Card" required/>Debit Card<br />
+                    <input type="radio" value="UPI" required/>UPI<br />
+                </li>
+            </ul>
+            <input type="checkbox" required/>I agree to the terms and conditions<br /><br />
+            <input type="submit" value="Book Flight" />
+        </form>
+        <footer>
+            <p>© 2025 Airline Services</p>
+        </footer>
+    </main>
+</body>
+
+</html>
