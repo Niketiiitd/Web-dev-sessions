@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            border: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        footer {
+            text-align: center;
+            margin: auto;
+            max-width: 80%;
+            border-top: 1px solid #989898;
+            padding: 15px 0px;
+            font-size: 13px;
+        }
+        nav {
+            text-align: center;
+            font-size: 17px;
+        }
+        header {
+            text-align: center;
+        }
+        .button{ 
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%; 
+            text-align: center; 
+            justify-content: center;
+            padding: 10px;
+        }
+        nav ul {
+            padding: 5px;
+            display: flex;
+            justify-content:space-evenly;
+            list-style-type: none;
+        }
+        nav li a {
+            font-size: 16px;
+            text-decoration: none;
+    
+        }
+        nav{
+            border-top: 1px solid #989898; 
+            max-width: 80%; 
+            align-items: center; 
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Airline Booking</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </br>
+        <form method="post">
+            <table border="0" align="center" cellpadding="5">
+                <tr>
+                    <td>Full Name:</td>
+                    <td>
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td> Phone:</td>
+                    <td>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td> Departure City:</td>
+                    <td>
+                        <input type="text" name="departure" placeholder="Departure City" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td> Destination:</td>
+                    <td>
+                        <input type="text" name="destination" placeholder="Destination" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td> Date:</td>
+                    <td>
+                        <input type="date" name="date" required>
+                    </td>	
+                </tr>
+                <tr>
+                    <td> Payment Method:</td>
+                    <td> 
+                        Credit Card<input type="radio" name="payment">
+                        Debit Card<input type="radio" name="payment">
+                        UPI<input type="radio" name="payment">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Terms & Conditions:</td>
+                    <td>
+                        <input type="checkbox">I agree to the terms and conditions
+                    </td>	
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Book Flight">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </br>
+        <footer style="align-items:center;">
+            <p>© 2025 Airline Services</p>
+        </footer>
+    </div>
+</body>
+</html>
