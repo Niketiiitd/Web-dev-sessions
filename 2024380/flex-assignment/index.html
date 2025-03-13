@@ -1,0 +1,96 @@
+<html>
+<head>
+  <style>
+    @media (max-width: 1250px) {
+      .container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .features {
+        padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .plan {
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      flex: 1;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="plan">
+      <div class="title">Basic</div>
+      <div class="price">$11.99/month</div>
+      <ul class="features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="plan">
+      <div class="title">Standard</div>
+      <div class="price">$19.99/month</div>
+      <ul class="features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="plan">
+      <div class="title">Premium</div>
+      <div class="price">$49.99/month</div>
+      <ul class="features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
