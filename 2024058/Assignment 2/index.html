@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pricing Table</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .container { 
+            display: flex; 
+            gap: 30px;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 350px;
+            background-color: #f2f2f2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #basic { 
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        #price { 
+            font-weight: bold;
+            font-size: 24px;
+            padding: 3px;
+        }
+
+        .items ul { 
+            list-style: none;
+            padding: 1px;
+            margin: 10px;
+
+        }
+
+        .items li {
+            font-size: 18px;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: orange;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div id="basic">BASIC</div>
+            <div id="price">$11.99/month</div>
+            <div class="items"> 
+                <ul>
+                    <li>✅ 10GB Storage</li>
+                    <li>✅ 1 User</li>
+                    <li>🚫 Support</li>
+                </ul>
+            </div>
+            <button>Sign Up</button>
+        </div>
+        
+        <div class="box1">
+            <div id="basic">STANDARD</div>
+            <div id="price">$19.99/month</div>
+            <div class="items"> 
+                <ul>
+                    <li>✅ 50GB Storage</li>
+                    <li>✅ 5 Users</li>
+                    <li>✅ Phone & Email Support</li>
+                </ul>
+            </div>
+            <button>Sign Up</button>
+        </div>
+        
+        <div class="box1">
+            <div id="basic">PREMIUM</div>
+            <div id="price">$49.99/month</div>
+            <div class="items"> 
+                <ul>
+                    <li>✅ 24/7 Support</li>
+                    <li>✅ 100GB Storage</li>
+                    <li>✅ 10 Users</li>
+                </ul>
+            </div>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
