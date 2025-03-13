@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Pricing Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        align-items: center;
+      }
+      .plan {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .plan h2 {
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 24px;
+        color: #4CAF50;
+        margin: 10px 0;
+      }
+      .features {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+      .features li {
+        margin: 10px 0;
+      }
+      .sign-up {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #007BFF;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+      .sign-up:hover {
+        background-color: #0056b3;
+      }
+      .plan.unavailable .features li:nth-last-child(1) {
+        color: #888;
+      }
+  </style>
+</head>
+<body>
+      <div class="container">
+        <div class="plan unavailable">
+            <h2>Basic</h2>
+            <div class="price">$9.99/month</div>
+            <ul class="features">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+        <div class="plan">
+            <h2>Standard</h2>
+            <div class="price">$19.99/month</div>
+            <ul class="features">
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 Users</li>
+                <li>✅ Phone & Email Support</li>
+            </ul>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <div class="price">$49.99/month</div>
+            <ul class="features">
+                <li>✅ 100GB Storage</li>
+                <li>✅ 10 Users</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
