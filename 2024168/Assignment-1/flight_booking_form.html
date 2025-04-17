@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight Booking Form</title>
+  <style>
+
+    body { font-family: Arial; margin: 20px;font-weight: bold;  }
+    form { max-width: 500px; margin: auto; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-bottom: 15px; box-sizing: border-box; }
+    fieldset { border: none; padding: 0; margin-bottom: 15px; }
+    legend { font-weight: bold; margin-bottom: 5px; }
+    .radio-group input,
+    .checkbox-group input { width: auto; margin-right: 5px; }
+    button { padding: 10px 15px; cursor: pointer; }
+  
+  </style>
+</head>
+<body>
+
+  <h1>Book Your Flight</h1>
+  <form method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="xxx@example.com" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7899">
+
+    <label for="departure">Departure City</label>
+    <input type="text" id="departure" name="departure" placeholder="From" required>
+
+    <label for="destination">Destination City</label>
+    <input type="text" id="destination" name="destination" placeholder="To" required>
+
+    <label for="date">Travel Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="class">Class</label>
+    <select id="class" name="class" required>
+      <option value="economy">Economy</option>
+      <option value="business">Business</option>
+      <option value="first">First Class</option>
+    </select>
+
+    <label for="class">Payment Method </label>
+    <select id="class" name="class" required>
+      <option value="economy">UPI</option>
+      <option value="business">Card</option>
+      <option value="first">Online Transaction  </option>
+    </select>
+
+    <fieldset class="checkbox-group">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms" style="display:inline; font-weight:normal;">I agree to the terms and conditions</label>
+    </fieldset>
+
+    <button type="submit">Book </button>
+  </form>
+
+</body>
+</html>
